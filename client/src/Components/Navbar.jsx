@@ -1,13 +1,20 @@
 import React from 'react'
 import Button from './Resusables/Button'
 import { Link} from 'react-router-dom'
-
+import { useDispatch } from 'react-redux'
+import { authSliceActions } from '../Store/auth-slice'
+import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Navbar = ({hide}) => {
+  const navigate=useNavigate();
+  const dispatch=useDispatch();
+  const totalCnt=useSelector((state)=>state.cart.total_cnt);
 
-  const handleClick=()=>{
-
-  }  
+  const handleLogout=()=>{
+    dispatch(authSliceActions.logout());
+    navigate("/");
+  }
 
   return (
     <div className="padding flex flex-row bg-slate-100">
@@ -25,11 +32,11 @@ const Navbar = ({hide}) => {
            </Link>
            
            <div id="cart-badge" class="absolute top-0 right-0 flex items-center justify-center w-6 h-6 text-xs text-white bg-red-500 rounded-full">
-      2
+      {totalCnt}
     </div>
            </div>
            <div className='w-3/4 flex justify-end p-1'>
-           <div>
+           <div onClick={handleLogout}>
            <Button label="Log Out"/>
            </div>
            </div>

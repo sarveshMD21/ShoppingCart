@@ -5,6 +5,7 @@ import { lotion1,lotion2,lotion3 ,FaceSerum1,FaceSerum2,FaceSerum3,Sunscreen1,Su
 
 export const catalouge=[
     {
+        id:1,
         name:"Niacinamide body lotion",
         label:"Damaged Barrier dry and flaky hair",
         price:"₹ 289",
@@ -14,6 +15,7 @@ export const catalouge=[
             lotion3]
     },
     {
+        id:2,
         name:"Salicylic Acid 2% Face Serum",
         label:"Reduces Acne, Blackheads & Excessive Oil",
         price:"₹ 545",
@@ -23,6 +25,7 @@ export const catalouge=[
             FaceSerum3]
     },
     {
+        id:3,
         name:"SPF 50 Sunscreen",
         label:"Broad Spectrum SPF 50, PA++++",
         price:"₹ 399",
@@ -33,6 +36,7 @@ export const catalouge=[
         ]
     },
     {
+        id:4,
         name:"Vitamin B5 10% Moisturizer",
         label:"Provides Lightweight Moisturization & Repairs Skin",
         price:"₹ 329",
@@ -43,6 +47,7 @@ export const catalouge=[
         ]
     },
     {
+        id:5,
         name:"Niacinamide body lotion",
         label:"Damaged Barrier dry and flaky hair",
         price:"₹ 289",
@@ -52,6 +57,7 @@ export const catalouge=[
             lotion3]
     },
     {
+        id:6,
         name:"Salicylic Acid 2% Face Serum",
         label:"Reduces Acne, Blackheads & Excessive Oil",
         price:"₹ 545",
@@ -61,6 +67,7 @@ export const catalouge=[
             FaceSerum3]
     },
     {
+        id:7,
         name:"SPF 50 Sunscreen",
         label:"Broad Spectrum SPF 50, PA++++",
         price:"₹ 399",
@@ -71,6 +78,7 @@ export const catalouge=[
         ]
     },
     {
+        id:8,
         name:"Vitamin B5 10% Moisturizer",
         label:"Provides Lightweight Moisturization & Repairs Skin",
         price:"₹ 329",

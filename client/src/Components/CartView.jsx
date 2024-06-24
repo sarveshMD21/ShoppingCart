@@ -3,8 +3,12 @@ import Navbar from './Navbar'
 import Button from './Resusables/Button'
 import { lotion1 } from '../assets/images'
 import OrderList from './OrderList'
+import { useSelector } from 'react-redux'
 
 const CartView = ({hide}) => {
+
+   const totalPrice=useSelector((state)=>state.cart.total_price);
+
   return (
     <div className=' h-screen flex flex-col'>
         <div>
@@ -64,8 +68,8 @@ const CartView = ({hide}) => {
                     <div className='text-2xl font-bold'>
                         Total:
                     </div>
-                    <div>
-                        Rs 500
+                    <div className='text-lg font-bold'>
+                        Rs {totalPrice}
                     </div>
                 </div>
                 <div className='mb-5'>

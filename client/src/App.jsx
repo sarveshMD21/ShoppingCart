@@ -2,10 +2,10 @@ import ProductView from './Components/ProductView';
 import CartView from './Components/CartView';
 import UserLogin from './Components/UserLogin';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { useSelector } from 'react-redux';
 
 function App() {
-
+  
   return (
     <Router>
       <Routes>
